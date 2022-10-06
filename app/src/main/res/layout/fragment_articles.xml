@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.ArticlesFragment">
+
+    <ImageView
+        android:id="@+id/imageBook"
+        android:layout_width="155.51dp"
+        android:layout_height="85.69dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="111dp"
+        android:src="@drawable/book_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="157dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="11dp"
+        android:paddingLeft="3dp"
+        android:src="@drawable/polli"
+        app:layout_constraintEnd_toEndOf="@+id/imageBook"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageBook"
+        app:layout_constraintTop_toBottomOf="@+id/imageBook" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="409dp"
+        android:layout_height="534dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:listitem="@layout/item_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
